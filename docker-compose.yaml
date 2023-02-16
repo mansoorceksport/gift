@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "55575:27017"
+    restart: on-failure
+    container_name: master
